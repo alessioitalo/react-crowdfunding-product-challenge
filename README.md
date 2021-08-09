@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/reactcrowdfundingproductchallenge-W8KQ8OCuR](https://www.frontendmentor.io/solutions/reactcrowdfundingproductchallenge-W8KQ8OCuR)
+- Live Site URL: [https://react-crowdfunding-product-challenge.vercel.app/](https://react-crowdfunding-product-challenge.vercel.app/)
 
 ### Built with
 
