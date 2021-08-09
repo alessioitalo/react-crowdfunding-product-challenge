@@ -1,13 +1,46 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: hsla(0, 0%, 48%, 0.1);
+  color: hsl(0, 0%, 48%);
+  min-width: 350px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body.sc-ksluID {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+}
+
+button,
+li {
+  cursor: pointer;
+}
+
+/* .disabled{
+  border: 2px solid green !important
+} */
+
+button {
+  background-color: hsl(176, 50%, 47%);
+  cursor: "pointer";
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  font-family: "Commissioner", sans-serif;
+  color: white;
+  font-weight: 500;
+  /* min-width: 10rem; */
+}
+
+button:hover {
+  background-color: hsl(176, 72%, 28%);
 }
