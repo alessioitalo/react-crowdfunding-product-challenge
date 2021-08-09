@@ -5,8 +5,9 @@ const StyledFooter = styled.footer`
   background-color: hsl(176, 50%, 47%);
   padding: 4rem;
   color: white;
+  width: 100%;
 
-  & div{
+  & div {
     margin: 0.5rem 0;
   }
 
@@ -20,19 +21,26 @@ const StyledFooter = styled.footer`
 function Footer() {
   return (
     <StyledFooter>
-      <div>Challenge by{" "}
-      <a target="_blank" rel="noreferrer" href="https://www.frontendmentor.io/">
-        Frontend Mentor
-      </a></div>
       <div>
-      Coded by{" "}
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://github.com/alessioitalo"
-      >
-        alessioitalo
-      </a></div>
+        Challenge by{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.frontendmentor.io/"
+        >
+          Frontend Mentor
+        </a>
+      </div>
+      <div>
+        Coded by{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/alessioitalo"
+        >
+          alessioitalo
+        </a>
+      </div>
     </StyledFooter>
   );
 }

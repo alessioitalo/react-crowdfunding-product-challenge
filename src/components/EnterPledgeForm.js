@@ -45,7 +45,6 @@ const StyledPledgeForm = styled.form`
 
 function EnterPledgeForm(props) {
   const [enteredPledge, setEnteredPledge] = useState(0);
-  // const [invalidForm, setInvalidForm] = useState(undefined);
 
   const submitHandler = (event) => {
     event.preventDefault();

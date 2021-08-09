@@ -5,12 +5,18 @@ import xIcon from "../images/icon-close-modal.svg";
 import EnterPledgeForm from "./EnterPledgeForm";
 
 const StyledPopup = styled.div`
-  position: absolute;
-  top: 8rem;
-  right: 50%;
-  width: 50%;
+  position: fixed;
+  top: 4rem;
+  width: 60%;
   z-index: 1;
-  min-width: 20rem;
+  overflow-y: auto;
+  max-height: 90%;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 
   @media (max-width: 600px) {
     width: 90%;
@@ -23,8 +29,6 @@ const StyledPopup = styled.div`
   & div {
     margin-left: 0;
     width: 100%;
-    position: relative;
-    left: 50%;
     background-color: white;
     border-radius: 10px;
     z-index: 2;
@@ -56,18 +60,17 @@ function Popup(props) {
     second: false,
   });
 
-  const highlightZeroHandler = ()=>{
-    setShowForm({zero:true, first:false, second:false})
-  }
+  const highlightZeroHandler = () => {
+    setShowForm({ zero: true, first: false, second: false });
+  };
 
-  const highlightFirstHandler = ()=>{
-    setShowForm({zero:false, first:true, second:false})
-  }
+  const highlightFirstHandler = () => {
+    setShowForm({ zero: false, first: true, second: false });
+  };
 
-  const highlightSecondHandler = ()=>{
-    setShowForm({zero:false, first:false, second:true})
-
-  }
+  const highlightSecondHandler = () => {
+    setShowForm({ zero: false, first: false, second: true });
+  };
 
   return (
     <StyledPopup>
@@ -82,7 +85,10 @@ function Popup(props) {
           Want to support us in bringing Mastercraft Bamboo Riser out in the
           world?
         </p>
-        <PopupMinicard selected={showForm.zero} highlightHandler={highlightZeroHandler}>
+        <PopupMinicard
+          selected={showForm.zero}
+          highlightHandler={highlightZeroHandler}
+        >
           <span className="popup-minicard-intro">
             <h3> Pledge with no reward</h3>
           </span>
@@ -101,7 +107,10 @@ function Popup(props) {
             id="zero"
           />
         )}
-        <PopupMinicard selected={showForm.first} highlightHandler={highlightFirstHandler}>
+        <PopupMinicard
+          selected={showForm.first}
+          highlightHandler={highlightFirstHandler}
+        >
           <span className="popup-minicard-intro">
             <span>
               <h3>Bamboo Stand </h3>
@@ -125,10 +134,12 @@ function Popup(props) {
             min={25}
             id="first"
             quantityHandler={props.quantityHandler}
-            
           />
         )}
-        <PopupMinicard selected={showForm.second} highlightHandler={highlightSecondHandler}>
+        <PopupMinicard
+          selected={showForm.second}
+          highlightHandler={highlightSecondHandler}
+        >
           <span className="popup-minicard-intro">
             <span>
               <h3>Black Edition Stand </h3>

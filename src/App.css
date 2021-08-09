@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
 .App {
   margin: 0;
   padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-family: 'Commissioner', sans-serif;
+  font-family: "Commissioner", sans-serif;
+  align-items: center;
 }
